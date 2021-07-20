@@ -1,13 +1,11 @@
-module.exports = () => {
-  var findItemsOver20 = function (itemList) {
-    var itemsOver20 = [];
+module.exports = (itemList) => {
+  var itemsOver20 = [];
 
-    itemList.forEach(function (item) {
-      if (item.qty > 20) {
-        itemsOver20.push(item);
-      }
-    });
+  itemList.forEach(function (item) {
+    if (item.qty > 20) {
+      itemsOver20.push(item);
+    }
+  });
 
-    return itemsOver20;
-  };
+  return itemsOver20;
 };

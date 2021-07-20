@@ -1,13 +1,11 @@
-module.exports = () => {
-  var findItemsOver = function (itemList, threshold) {
-    var itemsOver = [];
+module.exports = (itemList, threshold) => {
+  var itemsOver = [];
 
-    itemList.forEach(function (item) {
-      if (item.qty > threshold) {
-        itemsOver.push(item);
-      }
-    });
+  itemList.forEach(function (item) {
+    if (item.qty > threshold) {
+      itemsOver.push(item);
+    }
+  });
 
-    return itemsOver;
-  };
+  return itemsOver;
 };

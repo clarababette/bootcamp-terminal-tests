@@ -1,5 +1,3 @@
-module.exports = () => {
-  var countRegNumber = function (regList) {
-    return regList.split(",").length;
-  };
+module.exports = (regList) => {
+  return regList.split(",").length;
 };

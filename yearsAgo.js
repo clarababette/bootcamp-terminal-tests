@@ -1,7 +1,5 @@
-module.exports = () => {
-  var yearsAgo = function (year) {
-    var today = new Date();
+module.exports = (year) => {
+  var today = new Date();
 
-    return today.getFullYear() - year;
-  };
+  return today.getFullYear() - year;
 };
